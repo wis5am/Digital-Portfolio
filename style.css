@@ -1,0 +1,340 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  background-image:url(images/black-and-red.jpg) ;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center; 
+}
+
+header {
+  background-color: #282828;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 10px; /* Adding padding to make the hover effect more noticeable */
+  border-radius: 5px; /* Adding rounded corners for a softer visual effect */
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+nav ul li a:hover {
+  background-color: #5b5858; /* Dark background on hover */
+  color: #f0f0f0; /* Light text on hover */
+}
+
+/* Main Content Styles */
+main {
+  padding: 50px 15%;
+}
+
+#landing {
+  text-align: center;
+}
+
+#landing h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#landing img {
+  width: 250px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/* Skills section */
+
+.skill-category {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.skill-category h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-box {
+  background-color: #5b5858;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+/*About section*/
+.college {
+  color: rgb(171, 249, 171);
+  text-decoration: none;
+}
+.college:hover{
+  text-decoration: underline;
+
+}
+/* Projects section*/
+#projects {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project p {
+  margin-bottom: 20px;
+}
+
+.project-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.project-image {
+  max-width: 75%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto 20px;
+}
+.button-container {
+  text-align: center; /* Center aligns the content within the container */
+  width: 100%; /* Takes full width of the parent container */
+}
+.source-code {
+  background-color: #542e28;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block; /* Ensures the link behaves like a block element but flows like an inline element */
+  margin: 0 auto; /* Centers the link */
+  margin-top: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.source-code:hover {
+  background-color: rgb(208, 147, 123); /* A slightly darker blue for the hover effect */
+  transform: scale(1.1); /* Slightly enlarges the link on hover */
+}
+/* Footer Styles */
+footer {
+  background-color: #282828;
+  color: #fff;
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+#contact-info h3,
+.social-media h3 {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+#contact-info p,
+.social-media a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-media a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-copyright {
+  font-size: 0.9em;
+}
+
+
+.fa-github {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.fa-linkedin {
+  font-size: 20px;
+  margin-right: 5px;
+}
+a .fab {
+  color: #fff; /* Initial color of the icons */
+  transition: color 0.3s ease; /* Smooth transition for the color change */
+}
+
+a:hover .fab {
+  color: #d61f1f; /* Color of the icons on hover */
+}
+/* Styles for the entire skills section */
+#skills-2 {
+  background-color: #282828;
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Styles for each skill category */
+.skill-category-carousel {
+  background-color: #a8a6a6;
+  color: #000;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  display: none;
+  overflow: hidden;
+  height: 470px;
+}
+.skill-category-carousel:first-child {
+  display: block;
+}
+
+/* Styles for the title of each skill category */
+.skill-category-carousel h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Styles for the skill boxes */
+
+
+/* Styles for the navigation dots */
+.navigation-dots .dot {
+  background-color: #bbb;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.navigation-dots .dot.active {
+  background-color: #717171;
+}
+/* Styles for the skill icons containing images */
+.skill-icon {
+  position: relative;
+  display: inline-block; /* Display icons inline */
+  margin: 10px; /* Margin around each icon */
+}
+
+/* Styles for the images within the skill icons */
+.skill-icon img {
+  width: 100px; /* Fixed width for the images */
+  height: 100px; /* Fixed height for the images */
+  
+   
+  padding: 10px; /* Padding between the image and the border */
+}
+
+/* Optional: Styles for hover effect on skill icons */
+.skill-icon:hover img {
+  border-color: #fff; /* Change border color on hover */
+  cursor: pointer; /* Hand cursor on hover */
+}
+.skill-description {
+  position: absolute;
+  bottom: -20px; /* Distance from the bottom of the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+  padding: 5px;
+  /* Additional styling for the description */
+}
+
+.skill-icon:hover .skill-description {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+.welcome-animation {
+  font-size: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.85); /* Slightly darker background */
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeInOut 1s forwards;
+  /* Ensuring the text is responsive */
+  text-align: center;
+  padding: 0 20px;
+}
+
+.welcome-animation h1 {
+  color: #ffffff; /* Pure white text */
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: 700; /* Bold font weight */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 1px; /* Spacing between letters */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Subtle text glow */
+  transition: all 0.3s ease-in-out; /* Smooth transition for text */
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  10%, 90% { opacity: 1; }
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .welcome-animation h1 {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-animation h1 {
+      font-size: 1.5rem;
+  }
+}
+
